@@ -8,12 +8,12 @@ int main(int argc, char *argv[])
 {
 	QCoreApplication a(argc, argv);
 
-//	QFile file("D://coding//Object_Templates//release//mog_objects_05-09-11.txt");
-	QFile file("D://coding//Test_files//visitor_objects_small.txt");
+//	QFile file("D://Object_Templates//release//mog_objects_05-09-11.txt");
+	QFile file("D://Test_files//visitor_objects_small.txt");
 	file.open(QIODevice::ReadOnly | QIODevice::Text);
 	QTextStream in(&file);
 
-	QFile file2("D://coding//Test_files//visitor_objects_NEW.txt");
+	QFile file2("D://Test_files//visitor_objects_NEW.txt");
 	file2.open(QIODevice::WriteOnly | QIODevice::Text);
 	QTextStream out(&file2);
 
